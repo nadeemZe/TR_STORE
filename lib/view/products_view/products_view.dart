@@ -33,10 +33,10 @@ class _ProductsViewState extends State<ProductsView> {
     // Listen to network changes
     subscription = _checkInternet.networkStatusStream().listen((bool isConnected) {
 
-      //update ui when isConnected
-      setState(() {
+      //auto update ui when isConnected
+    /*  setState(() {
         _isConnected = isConnected;
-      });
+      });*/
     });
   }
 
